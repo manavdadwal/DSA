@@ -5,8 +5,7 @@
  */
 
 function plusMinus(arr) {
-    // Write your code here
-    let len = arr.length;
+      let len = arr.length;
 
     /**
      * @param
