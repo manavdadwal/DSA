@@ -5,13 +5,13 @@
  * The function accepts INTEGER_ARRAY candles as parameter.
  */
 
-// function birthdayCakeCandles(candles) {
-//   let maxCandleHeight = Math.max(...candles);
-//   let maxCandles = candles.filter(
-//     (height) => height === maxCandleHeight
-//   ).length;
-//   return maxCandles;
-// }
+function birthdayCakeCandles(candles) {
+  let maxCandleHeight = Math.max(...candles);
+  let maxCandles = candles.filter(
+    (height) => height === maxCandleHeight
+  ).length;
+  return maxCandles;
+}
 
 // Test cases
 console.log(birthdayCakeCandles([3, 2, 1, 3])); // Output: 2
