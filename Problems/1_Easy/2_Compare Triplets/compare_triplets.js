@@ -8,15 +8,18 @@
  */
 
 function compareTriplets(a, b) {
-    let a1 = 0
-    let b1 = 0
-    for (let i = 0; i <= a.length; i++) {
-        if (a[i] > b[i]) {
-            a1++;
-        }
-        else if (b[i] > a[i]) {
-            b1++;
-        }
+  let a1 = 0;
+  let b1 = 0;
+  for (let i = 0; i <= a.length; i++) {
+    if (a[i] > b[i]) {
+      a1++;
+    } else if (b[i] > a[i]) {
+      b1++;
     }
-    return [a1, b1];
+  }
+  return [a1, b1];
 }
+
+// Test Cases
+console.log(compareTriplets([1, 2, 3], [3, 2, 1])); // [1, 1]
+console.log(compareTriplets([5, 6, 7], [3, 6, 10])); // [1, 1]
