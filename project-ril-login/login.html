@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Vessel Management</title>
+</head>
+
+<body>
+    <img src="login-background.png" alt="Logo" class="logo" style="width: 100vw; height: 100vh; object-fit: cover;" />
+    <img src="reliance-logo.png" alt="Logo" class="ril-logo" />
+    <div class="platform-name">
+        <p class="platform-title">O2C</p>
+        <p class="platform-title">Vessel Management Platform</p>
+        <p class="platform-subtitle">Streamlining vessel operations for efficiency and compliance</p>
+        <p class="platform-subtitle">Powered by Reliance</p>
+    </div>
+
+    <div class="login-container">
+
+        <div class="login-container-contents">
+
+            <h1 class="login-header">Sign in</h1>
+
+            <div class="input-group">
+                <label for="username" class="label-style">Email Id</label>
+                <input placeholder="Enter Email Id" type="text" class="input" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password" class="label-style">Password *</label>
+                <input placeholder="Enter Password" type="password" class="input" id="password" name="password"
+                    required>
+            </div>
+            <div class="forgot-password">
+                <a href="#"> <span class="fp_link">Forgot Password?
+                    </span></a>
+            </div>
+            <div class="captcha">
+                <img src="captcha.png" alt="Logo" />
+                <span class="refresh-captcha">
+                    <i class="fas fa-sync-alt" aria-hidden="true"></i>
+                </span>
+                <input type="text" class="captcha-input" placeholder="Enter Captcha" required>
+            </div>
+            <button class="submit-button" type="submit">Login</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
