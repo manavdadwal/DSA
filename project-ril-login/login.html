@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <img src="login-background.png" alt="Logo" class="logo" style="width: 100vw; height: 100vh; object-fit: cover;" />
-    <img src="reliance-logo.png" alt="Logo" class="ril-logo" />
-    <div class="platform-name">
+    <img class="background-img" />
+    <div class="platform-details">
+        <img src="reliance-logo.png" alt="RIL-Logo" class="ril-logo" />
         <p class="platform-title">O2C</p>
         <p class="platform-title">Vessel Management Platform</p>
         <p class="platform-subtitle">Streamlining vessel operations for efficiency and compliance</p>
@@ -45,7 +45,7 @@
                 </span>
                 <input type="text" class="captcha-input" placeholder="Enter Captcha" required>
             </div>
-            <button class="submit-button" type="submit">Login</button>
+            <button class="submit-button" type="submit" (click)="submit()">Login</button>
 
         </div>
 
