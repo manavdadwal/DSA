@@ -16,175 +16,190 @@ html {
     object-fit: cover;
 }
 
-.platform-details {
+.platform-login-page {
     position: absolute;
-    left: 84px;
-    color: #ffffff;
-    display: grid;
-    justify-content: center;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
     align-items: center;
     align-self: center;
-    margin-bottom: 164px;
-
-    .ril-logo {
-        object-fit: cover;
-        height: 64px;
-        padding-bottom: 16px;
-    }
-
-    .platform-title {
-        font-family: JioType, "Helvetica Neue", sans-serif;
-        font-weight: 900;
-        font-size: 34px;
-        margin: 0;
-    }
-
-    .platform-subtitle {
-        font-family: JioType, "Helvetica Neue", sans-serif;
-        font-size: 10px;
-        margin: 0;
-    }
-}
-
-.login-container {
-    position: absolute;
-    width: 380px;
-    /* height: calc(100vh - 100px); */
-    height: 420px;
     right: 84px;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    border: 1px solid #ffff;
-    border-radius: 20px;
-    display: grid;
-    box-shadow: 0px 0px 50px 5px black;
+    left: 84px;
 
-    .login-container-contents {
-        width: 320px;
-        height: 350px;
+    .platform-details {
+        left: 84px;
+        color: #ffffff;
+        display: grid;
         justify-content: center;
         align-items: center;
-        display: grid;
+        align-self: center;
 
-        .login-header {
+        .ril-logo {
+            object-fit: cover;
+            height: 64px;
+            padding-bottom: 16px;
+        }
+
+        .platform-title {
             font-family: JioType, "Helvetica Neue", sans-serif;
             font-weight: 900;
             font-size: 34px;
             margin: 0;
         }
 
-        .input-group {
-            width: 320px;
-
-            .label-style {
-                display: block;
-                height: 22px;
-                font-family: JioType, "Helvetica Neue", sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-                color: #808080;
-            }
-
-            .input {
-                width: 309px;
-                margin: 0px;
-                padding: 0px;
-                height: 30px;
-                border: 1px solid #cfcfcf;
-                border-radius: 8px;
-                padding-left: 10px;
-                font-size: 12px;
-            }
-        }
-
-        .forgot-password {
-            height: 14px;
-            color: #3535f3;
-            display: flex;
-            justify-content: end;
-
-            .fp_link {
-                font-family: JioType, "Helvetica Neue", sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-            }
-        }
-
-        .captcha {
-            display: flex;
-            gap: 10px;
-
-            .refresh-captcha {
-                display: flex;
-                align-items: center;
-            }
-
-            .captcha-input {
-                width: 112px;
-                border: 1px solid #cfcfcf;
-                border-radius: 8px;
-                font-size: 12px;
-                padding-left: 10px;
-            }
-        }
-
-        .submit-button {
-            background-color: #3535f3;
-            color: #ffff;
-            border: 1px solid #cfcfcf;
-            height: 40px;
-            border-radius: 42px;
+        .platform-subtitle {
             font-family: JioType, "Helvetica Neue", sans-serif;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
+            font-size: 10px;
+            margin: 0;
+        }
+    }
+
+    .login-container {
+        width: 380px;
+        height: 420px;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        border: 1px solid #ffff;
+        border-radius: 20px;
+        display: grid;
+        box-shadow: 0px 0px 50px 5px black;
+
+        .login-container-contents {
+            width: 320px;
+            height: 350px;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+
+            .login-header {
+                font-family: JioType, "Helvetica Neue", sans-serif;
+                font-weight: 900;
+                font-size: 34px;
+                margin: 0;
+            }
+
+            .input-group {
+                width: 320px;
+
+                .label-style {
+                    display: block;
+                    height: 22px;
+                    font-family: JioType, "Helvetica Neue", sans-serif;
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: #808080;
+                }
+
+                .input {
+                    width: 309px;
+                    margin: 0px;
+                    padding: 0px;
+                    height: 30px;
+                    border: 1px solid #cfcfcf;
+                    border-radius: 8px;
+                    padding-left: 10px;
+                    font-size: 12px;
+                }
+            }
+
+            .forgot-password {
+                height: 14px;
+                color: #3535f3;
+                display: flex;
+                justify-content: end;
+
+                .fp_link {
+                    font-family: JioType, "Helvetica Neue", sans-serif;
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+            }
+
+            .captcha {
+                display: flex;
+                gap: 10px;
+
+                .refresh-captcha {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .captcha-input {
+                    width: 112px;
+                    border: 1px solid #cfcfcf;
+                    border-radius: 8px;
+                    font-size: 12px;
+                    padding-left: 10px;
+                }
+            }
+
+            .submit-button {
+                background-color: #3535f3;
+                color: #ffff;
+                border: 1px solid #cfcfcf;
+                height: 40px;
+                border-radius: 42px;
+                font-family: JioType, "Helvetica Neue", sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+            }
         }
     }
 }
 
-@media screen and (min-width: 360px) and (max-width: 1024px) {
-    .ril-logo {
+@media screen and (min-width: 340px) and (max-width: 1000px) {
+    .platform-login-page {
         position: absolute;
-        top: 50px;
-        right: auto;
-        left: auto;
-    }
-
-    .platform-name {
-        position: absolute;
-        right: auto;
-        left: auto;
-    }
-
-    .login-container {
-        position: absolute;
-        right: auto;
-        justify-content: center;
-        align-items: center;
+        height: 100vh;
         display: grid;
-    }
-}
-
-@media screen and (max-width: 1024px) and (max-height: 600px) {
-    .ril-logo {
-        position: absolute;
-        top: 50px;
-        right: 0px;
-        left: 84px;
-    }
-
-    .platform-name {
-        position: absolute;
-        right: auto;
-        left: 84px;
-    }
-
-    .login-container {
-        position: absolute;
-        right: 84px;
-        justify-content: center;
+        justify-content: space-between;
+        justify-self: center;
+        justify-items: center;
         align-items: center;
-        display: grid;
+        align-self: center;
+        align-content: center;
+        gap: 24px;
+        right: 0;
+        left: 0;
+
+        .platform-details {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+
+            .ril-logo {
+                display: flex;
+                justify-self: center;
+            }
+
+            .platform-title {
+                font-size: 22px;
+                margin: 0;
+                display: flex;
+                justify-self: center;
+            }
+
+            .platform-subtitle {
+                font-size: 8px;
+                margin: 0;
+                display: flex;
+                justify-self: center;
+            }
+        }
+
+        /* .login-container {
+            height: 420px;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #ffff;
+            border-radius: 20px;
+            display: grid;
+            box-shadow: 0px 0px 50px 5px black;
+        } */
     }
 }
